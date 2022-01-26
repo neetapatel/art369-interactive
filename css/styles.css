@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    background-color: ghostwhite;
+    color: darkblue;
+}
+
+html {
+    margin: 20px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+a:hover {
+    color: cyan;
+}
