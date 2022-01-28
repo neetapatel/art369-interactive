@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/styles.css"/>
   </head>
   <body>
-
+    
+    <h1 id="now"></h1>
     <h1 id="top">neeta&rsquo;s class website</h1>
 
     <h2>class projects</h2>
@@ -33,7 +34,7 @@
 
     <h2>about this site</h2>
     <p>
-      welcome to neeta&rsquo;s home on the web for art369: interactive design (or, software for the people). visit the main course page <a href="http://software-for-people.net/">here</a>.
+      welcome to neeta&rsquo;s home on the web for art369: interactive design (or, software for the people). visit the main course page <a href="http://software-for-people.net/" target="_blank">here</a>.
     </p>
 
     <br>
@@ -46,6 +47,13 @@
         <a href="#top">back to top</a>
       </div>
     </footer>
+
+    <script>
+      const timeElapsed = Date.now();
+      const today = new Date(timeElapsed);
+      document.getElementById('now').innerHTML=today.toDateString();
+      console.log(today.toDateString());
+    </script>
 
   </body>
 </html>
