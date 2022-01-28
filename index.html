@@ -47,12 +47,16 @@
         <a href="#top">back to top</a>
       </div>
     </footer>
-    <!-- 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
     <script>
-      const timeElapsed = Date.now();
-      const today = new Date(timeElapsed);
-      document.getElementById('now').innerHTML=today.toDateString();
-    </script> -->
+      $(document).ready(function() {
+        const timeElapsed = Date.now();
+        const today = new Date(timeElapsed);
+        document.getElementById('now').innerHTML=today.toDateString();
+      });
+    </script> 
   
   </body>
 </html>
