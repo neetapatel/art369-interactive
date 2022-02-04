@@ -54,7 +54,7 @@ html {
     background: rgb(0,255,255);
     background: linear-gradient(to top, cyan, white);
     background-attachment: fixed;
-    cursor: url(http://neeta.works/art369-interactive/images/favicon.png) 2 2, auto;
+    cursor: url('http://neeta.works/art369-interactive/images/cursor.png') 2 2, auto;
 }
 
 body {
