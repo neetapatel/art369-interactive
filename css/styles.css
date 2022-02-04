@@ -50,16 +50,20 @@ table {
 /* NEETA'S CSS STARTS HERE */
 
 html {
-    margin: 20px;
     font-size: 18px;
     background: rgb(0,255,255);
-    background: radial-gradient(circle, rgba(0,255,255,1) 0%, rgba(255,255,255,1) 46%) fixed;
+    background: linear-gradient(to top, cyan, white);
+    background-attachment: fixed;
+    cursor: url(http://neeta.works/art369-interactive/images/favicon.png) 2 2, auto;
 }
 
 body {
+    position: relative;
+    margin: 20px;
     color: darkblue;
     font-family: monospace;
     line-height: 1.5rem;
+    text-transform: lowercase;
 }
 
 h1 {
@@ -67,7 +71,7 @@ h1 {
 }
 
 h2 {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     margin-bottom: 0.5rem;
     font-weight: bold;
 }
@@ -77,25 +81,26 @@ p {
 }
 
 a {
+    color: darkblue;
     text-underline-offset: 0.25rem;
     text-decoration-thickness: 0.1rem;
-}
-
-a:hover {
-    color: cyan;
     text-decoration-style: wavy;
 }
 
-a:visited {
-    color: cyan;
-    text-decoration: none;
-}
-
-#now {
-    float: right;
+a:hover {
     text-transform: uppercase;
 }
 
-footer {
-    position: sticky;
+#now {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 600px) {
+
+    #now {
+        position: relative;
+    }
+    
 }
