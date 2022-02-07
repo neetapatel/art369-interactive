@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    background-color: rebeccapurple;
+}
+
+p {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+}
+
+img {
+    display: inline;
+    max-width: 300px;
+}
+
+.conversation {
+    font-family: sans-serif;
+    color: orange;
+    background-color: white;
+    vertical-align: bottom;
+}
+
+.letterform {
+    font-family: 'Shrikhand', cursive;
+    font-size: 20rem;
+    color: white;
+    background-color: orange;
+    padding-right: 40px;
+}
