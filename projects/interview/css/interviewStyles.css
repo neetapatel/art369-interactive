@@ -3,6 +3,21 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: MangoGujaratiDisplay;
+    src: url(../fonts/MATD20VadgamaGujaratiDisplay.otf);
+}
+
+@font-face {
+    font-family: MangoGujarati;
+    src: url(../fonts/MATD20VadgamaGujarati-Regular.otf);
+}
+
+@font-face {
+    font-family: MangoLatin;
+    src: url(../fonts/MATD20VadgamaLatin-Regular.otf);
+}
+
 html {
     font-size: 16px;
     background-color: rebeccapurple;
@@ -20,14 +35,16 @@ img {
 }
 
 .conversation {
-    font-family: sans-serif;
-    color: orange;
+    font-family: MangoLatin, sans-serif;
+    color: rebeccapurple;
     background-color: white;
     vertical-align: bottom;
+    width: 300px;
+    line-height: 1.5rem;
 }
 
 .letterform {
-    font-family: 'Shrikhand', cursive;
+    font-family: 'MangoGujarati', cursive;
     font-size: 20rem;
     color: white;
     background-color: orange;
