@@ -54,7 +54,7 @@ html {
     background: rgb(0,255,255);
     background: linear-gradient(to top, cyan, white);
     background-attachment: fixed;
-    cursor: url(../images/cursor.png) 2 2, auto;
+    cursor: url(../images/cursor.png) 10 10, auto;
 }
 
 body {
@@ -85,7 +85,7 @@ a {
     text-underline-offset: 0.25rem;
     text-decoration-thickness: 0.1rem;
     text-decoration-style: wavy;
-    cursor: inherit;
+    cursor: url(../images/cursor_large.png) 15 15, auto;
 }
 
 a:hover {
