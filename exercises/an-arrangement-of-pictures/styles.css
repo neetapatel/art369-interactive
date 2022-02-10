@@ -1,0 +1,29 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/15/Grj%C3%B3tagj%C3%A1_caves_in_summer_2009_%282%29.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: paleturquoise;
+    overflow-y: hidden;
+}
+
+.book1 {
+    height: 250px;
+    position: relative;
+    top: 80vh;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 0.75em;
+}

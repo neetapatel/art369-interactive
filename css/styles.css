@@ -82,7 +82,7 @@ p {
 
 a {
     color: darkblue;
-    text-underline-offset: 0.25rem;
+    text-underline-offset: 0.2rem;
     text-decoration-thickness: 0.1rem;
     text-decoration-style: wavy;
     cursor: url(../images/cursor_large.png) 15 15, auto;
@@ -90,6 +90,10 @@ a {
 
 a:hover {
     text-transform: uppercase;
+}
+
+li {
+    margin-bottom: 2px;
 }
 
 #now {
