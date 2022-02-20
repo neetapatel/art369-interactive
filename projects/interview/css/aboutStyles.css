@@ -1,0 +1,34 @@
+html {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+body {
+    padding: 1em;
+    font-size: calc(18px + 1.7vw);
+    line-height: 1.5em;
+}
+
+p {
+    display: block;
+}
+
+.gujarati {
+    font-family: 'MangoGujarati';
+}
+
+a {
+    color: orange;
+}
+
+a:hover {
+    color: white;
+}
+
+/* responsive breakpoints */
+
+@media screen and (min-width: 1200px) {
+    body {
+        width: 75vw;
+    }
+}
