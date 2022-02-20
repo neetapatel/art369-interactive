@@ -138,13 +138,32 @@ iframe {
     height: 100%;
     position: fixed;
     opacity: 0;
+    background-size: cover;
     background-position: center;
     transition: opacity 1s ease;
 }
 
+.container-1 { background-image: url(../img/letters/ka.jpg); }
+.container-2 { background-image: url(../img/letters/kha.jpeg); }
+.container-3 { background-image: url(../img/letters/chha.jpeg);}
+.container-4 { background-image: url(../img/letters/ja.jpg); }
+.container-5 { background-image: url(../img/references/ref_1.jpeg); }
+.container-6 { background-image: url(../img/references/ref_5.jpg); }
+.container-7 { background-image: url(../img/letters/ana.jpg); }
+.container-9 { background-image: url(../img/letters/na.jpg); }
+.container-10 { background-image: url(../img/letters/pa.JPG); }
+.container-11 { background-image: url(../img/references/ref_2.jpeg); background-position: bottom; }
+.container-13 { background-image: url(../img/letters/ra.jpeg); background-position: top; }
+.container-15 { background-image: url(../img/references/ref_3.jpeg); background-position: bottom; }
+.container-16 { background-image: url(../img/letters/a.jpg); background-position: bottom; }
+.container-17 { background-image: url(../img/letters/aa.jpg); }
+.container-18 { background-image: url(../img/letters/i.jpeg); }
+.container-19 { background-image: url(../img/letters/e.HEIC); }
+.container-20 { background-image: url(../img/references/ref_4.jpeg); }
+
 /* set button images */
-.btn-1:hover ~ .container { background-image: url(../img/letters/ka.jpg); }
-.btn-2:hover ~ .container { background-image: url(../img/letters/kha.jpeg); }
+/* .btn-1:hover ~ .container { background-image: url(../img/letters/ka.jpg); } */
+/* .btn-2:hover ~ .container { background-image: url(../img/letters/kha.jpeg); }
 .btn-3:hover ~ .container { background-image: url(../img/letters/chha.jpeg); }
 .btn-4:hover ~ .container { background-image: url(../img/letters/ja.jpg); }
 .btn-5:hover ~ .container { background-image: url(../img/references/ref_1.jpeg); }
@@ -164,7 +183,7 @@ iframe {
 .btn-19:hover ~ .container { background-image: url(../img/letters/e.HEIC); }
 .btn-20:hover ~ .container { background-image: url(../img/references/ref_4.jpeg); }
 .btn-21:hover ~ .container { background-image: url(../img/letters/); }
-.btn-22:hover ~ .container { background-image: url(../img/letters/); }
+.btn-22:hover ~ .container { background-image: url(../img/letters/); } */
 
 /* pause buttons animation on hover */
 .btn:hover {
@@ -184,9 +203,29 @@ iframe {
 }
 
 /* reveal image on hover of btns */
-.btn:hover ~ .container {
+/* .btn:hover ~ .container {
     display: inline;
     background-size: cover;
+    opacity: 1;
+    transition: opacity 1s ease;
+} */
+.btn-1:hover ~ .container-1, 
+.btn-2:hover ~ .container-2,
+.btn-3:hover ~ .container-3,
+.btn-4:hover ~ .container-4,
+.btn-5:hover ~ .container-5,
+.btn-6:hover ~ .container-6,
+.btn-7:hover ~ .container-7,
+.btn-9:hover ~ .container-9,
+.btn-10:hover ~ .container-10,
+.btn-11:hover ~ .container-11,
+.btn-13:hover ~ .container-13,
+.btn-15:hover ~ .container-15,
+.btn-16:hover ~ .container-16,
+.btn-17:hover ~ .container-17,
+.btn-18:hover ~ .container-18,
+.btn-19:hover ~ .container-19,
+.btn-20:hover ~ .container-20 {
     opacity: 1;
     transition: opacity 1s ease;
 }
