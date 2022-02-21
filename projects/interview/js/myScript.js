@@ -91,3 +91,11 @@ $(function () {
 
     });
 });
+
+// originally discovered this trick on mindy seu's website: https://mindyseu.com/ . . . then also found the code snippet on this stack overflow page: https://stackoverflow.com/questions/16354122/how-to-put-scrolling-text-in-title-tag
+(function titleScroller(text) {
+    document.title = text;
+    setTimeout(function () {
+        titleScroller(text.substr(1) + text.substr(0, 1));
+    }, 500);
+}("A Conversation with Keya Vadgama • "));
