@@ -101,13 +101,24 @@ iframe {
 /* general styling for all buttons */
 .btn {
     z-index: 1;
-    background-color: rebeccapurple;
-    border-radius: 50%;
+    /* background-color: rebeccapurple;
+    border-radius: 50%; */
     width: calc(40px + 1vw);
     height: calc(40px + 1vw);
     position: absolute;
     animation: 2s ease infinite pulse;
     opacity: 0;
+}
+
+/* style all svgs */
+svg {
+    fill: rebeccapurple;    
+}
+
+/* about page button styling on hover */
+.btn-0 svg:hover {
+    fill: orange;
+    transition: background-color 1s ease;
 }
 
 /* styling for about page button */
@@ -201,10 +212,10 @@ iframe {
 }
 
 /* about page button styling on hover */
-.btn-0:hover {
+/* .btn-0:hover {
     background-color: orange;
     transition: background-color 1s ease;
-}
+} */
 
 /* reveal about page on hover */
 .btn-0:hover ~ iframe {
