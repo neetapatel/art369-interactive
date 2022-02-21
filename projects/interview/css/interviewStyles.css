@@ -10,8 +10,12 @@
     src: url(../fonts/MATD20VadgamaLatin-Regular.otf);
 }
 @font-face {
+    font-family: MangoItalic;
+    src: url(../fonts/MATD20VadgamaItalic-Regular.otf);
+}
+@font-face {
     font-family: MangoGujarati;
-    src: url(../fonts/MATD20VadgamaGujarati-Regular.otf);
+    src: url(../fonts/Mango-Gujarati-Regular.otf);
 }
 
 /* set base font & bg styles */
@@ -35,6 +39,12 @@ body {
 /* inline for running conversation  */
 p {
     display: inline;
+}
+
+/* italic style */
+.ital {
+    text-transform: lowercase;
+    font-family: MangoItalic;
 }
 
 /* body text layout */
