@@ -183,6 +183,7 @@ img.bleed {
 
 /* set button images */
 /* set button images */
+.container-0 { background-image: url(../img/references/ref_6.jpeg); }
 .container-1 { background-image: url(../img/letters/ka.jpg); }
 .container-2 { background-image: url(../img/letters/kha.jpeg); }
 .container-3 { background-image: url(../img/letters/chha.jpeg);}
@@ -202,6 +203,7 @@ img.bleed {
 .container-17 { background-image: url(../img/references/ref_4.jpeg); }
 
 /* reveal images on hover */
+.btn-0:hover ~ .container-0,
 .btn-1:hover ~ .container-1, 
 .btn-2:hover ~ .container-2,
 .btn-3:hover ~ .container-3,
@@ -219,22 +221,6 @@ img.bleed {
 .btn-15:hover ~ .container-15,
 .btn-16:hover ~ .container-16,
 .btn-17:hover ~ .container-17 {
-    opacity: 1;
-    transition: opacity 1s ease;
-}
-
-/* style about page iframe */
-iframe {
-    position: absolute;
-    width: 100%;
-    height: 300%;
-    border: none;
-    opacity: 0;
-    transition: opacity 1s ease;
-}
-
-/* reveal about page on hover */
-.btn-0:hover ~ iframe {
     opacity: 1;
     transition: opacity 1s ease;
 }
