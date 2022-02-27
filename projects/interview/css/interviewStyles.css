@@ -75,6 +75,16 @@ p {
     position: block;
 }
 
+/* links */
+a {
+    color: green;
+    font-family: MangoItalic;
+}
+
+a:hover {
+    color: white;
+}
+
 .inset-img {
     display: none;
 }
