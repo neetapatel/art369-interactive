@@ -8,13 +8,13 @@ $(function () {
     var height = Math.max( body.scrollHeight, body.offsetHeight, 
                            html.clientHeight, html.scrollHeight, html.offsetHeight );
     
-    var count = 44;
+    var count = 45;
     // factor is a slice of the scroll-height
     var factor = height / (count+3); // lmao what is this int ?
     
     // vertical positioning of buttons
     var btnFactor = html.scrollHeight / 45;
-    $(".btn-1").css({top: btnFactor*2});
+    $(".btn-1").css({top: btnFactor*3});
     $(".btn-2").css({top: btnFactor*4});
     $(".btn-3").css({top: btnFactor*6});
     $(".btn-4").css({top: btnFactor*8});
@@ -26,47 +26,42 @@ $(function () {
     $(".btn-10").css({top: btnFactor*20});
     $(".btn-11").css({top: btnFactor*22});
     $(".btn-12").css({top: btnFactor*24});
-    $(".btn-13").css({top: btnFactor*26});
-    $(".btn-14").css({top: btnFactor*28});
-    $(".btn-15").css({top: btnFactor*30});
-    $(".btn-16").css({top: btnFactor*32});
-    $(".btn-17").css({top: btnFactor*34.5});
-    $(".btn-18").css({top: btnFactor*37});
-    $(".btn-19").css({top: btnFactor*40});
-    $(".btn-20").css({top: btnFactor*42.5});
-    $(".btn-21").css({top: btnFactor*45});
-    $(".btn-22").css({top: btnFactor*47.5});
+    $(".btn-13").css({top: btnFactor*27});
+    $(".btn-14").css({top: btnFactor*31});
+    $(".btn-15").css({top: btnFactor*35});
+    $(".btn-16").css({top: btnFactor*37});
+    $(".btn-17").css({top: btnFactor*42});
 
     // makes buttons visible after positioning
-    $(".btn-0").css({opacity: 0.7});
-    $(".btn-1").css({opacity: 0.7});
-    $(".btn-2").css({opacity: 0.7});
-    $(".btn-3").css({opacity: 0.7});
-    $(".btn-4").css({opacity: 0.7});
-    $(".btn-5").css({opacity: 0.7});
-    $(".btn-6").css({opacity: 0.7});
-    $(".btn-7").css({opacity: 0.7});
-    $(".btn-8").css({opacity: 0.7});
-    $(".btn-9").css({opacity: 0.7});
-    $(".btn-10").css({opacity: 0.7});
-    $(".btn-11").css({opacity: 0.7});
-    $(".btn-12").css({opacity: 0.7});
-    $(".btn-13").css({opacity: 0.7});
-    $(".btn-14").css({opacity: 0.7});
-    $(".btn-15").css({opacity: 0.7});
-    $(".btn-16").css({opacity: 0.7});
-    $(".btn-17").css({opacity: 0.7});
-    $(".btn-18").css({opacity: 0.7});
-    $(".btn-19").css({opacity: 0.7});
-    $(".btn-20").css({opacity: 0.7});
-    $(".btn-21").css({opacity: 0.7});
-    $(".btn-22").css({opacity: 0.7});
+    $(".btn-0").css({opacity: 1.0});
+    $(".btn-1").css({opacity: 1.0});
+    $(".btn-2").css({opacity: 1.0});
+    $(".btn-3").css({opacity: 1.0});
+    $(".btn-4").css({opacity: 1.0});
+    $(".btn-5").css({opacity: 1.0});
+    $(".btn-6").css({opacity: 1.0});
+    $(".btn-7").css({opacity: 1.0});
+    $(".btn-8").css({opacity: 1.0});
+    $(".btn-9").css({opacity: 1.0});
+    $(".btn-10").css({opacity: 1.0});
+    $(".btn-11").css({opacity: 1.0});
+    $(".btn-12").css({opacity: 1.0});
+    $(".btn-13").css({opacity: 1.0});
+    $(".btn-14").css({opacity: 1.0});
+    $(".btn-15").css({opacity: 1.0});
+    $(".btn-16").css({opacity: 1.0});
+    $(".btn-17").css({opacity: 1.0});
+    $(".btn-18").css({opacity: 1.0});
+    $(".btn-19").css({opacity: 1.0});
+    $(".btn-20").css({opacity: 1.0});
+    $(".btn-21").css({opacity: 1.0});
+    $(".btn-22").css({opacity: 1.0});
 
     // on scroll
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         var letterforms = document.getElementsByClassName("letter");
-        var o = 0.7;
+        var o = 1.0;
 
         for (let i = 2; i <= count+3; i++) {
             // start-of-scroll case
