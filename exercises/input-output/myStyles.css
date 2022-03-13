@@ -1,0 +1,56 @@
+* {
+    padding; 0;
+    margin: 0;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    /* Colorwheel */
+    background: conic-gradient(
+        hsl(360, 100%, 50%),
+        hsl(315, 100%, 50%),
+        hsl(270, 100%, 50%),    
+        hsl(225, 100%, 50%),
+        hsl(180, 100%, 50%),
+        hsl(135, 100%, 50%),
+        hsl(90, 100%, 50%),
+        hsl(45, 100%, 50%),
+        hsl(0, 100%, 50%)
+    );
+}
+
+.targetText {
+    color: white;
+}
+
+.slideContainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 15px;
+    border-radius: 15px;  
+    background: white;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin: 5%;
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    border-color: white;
+    border-width: 2px;
+    border-style: ridge;
+    border-radius: 50%; 
+    background: white;
+    cursor: pointer;
+}
