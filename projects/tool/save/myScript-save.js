@@ -1,12 +1,3 @@
-// after document loads
-// $(function () {
-//   var h = window.innerHeight;
-//   document.body.style.height = h + "px";
-//   console.log(h);
-//   var t = document.body.style.height;
-//   console.log(t);
-// });
-
 var sound = new Audio('audio/meditation-bell-sound.mp3');
 
 var totalSecs = 0;
