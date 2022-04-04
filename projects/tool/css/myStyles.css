@@ -5,9 +5,9 @@
 
 html {
     background-color: moccasin;
-    font-size: 16px;
+    font-size: calc(16px + 1vw);
     line-height: 1.25em;
-    font-family: monospace;
+    font-family: serif;
     color: saddlebrown;
     text-align: center;
 }
@@ -15,33 +15,30 @@ html {
 body {
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .timer-box {
-    border: 1.5px solid saddlebrown;
+    border: 2px solid saddlebrown;
     border-radius: 30px;
     width: 85vw;
     max-width: 500px;
-    height: 90vh;
-    max-height: 1000px;
+    margin: 5vh auto;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }   
 
 button {
-    font-family: monospace;
+    font-family: serif;
     font-size: 1rem;
     background-color: moccasin;
     color: saddlebrown;
-    border: 1.5px solid saddlebrown;
+    border: 2px solid saddlebrown;
     border-radius: 50% 70%;
-    padding: 3rem;
+    width: 120px;
     margin: 0 auto;
-    width: 172px;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
+    padding: 1.2rem 0;
 }
 
 button:hover {
@@ -58,15 +55,12 @@ button:hover {
 }
 
 .bean-box {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+
 }
 
 .bean {
-    width: 10%;
+    width: calc(80px + 1vw);
+    margin: 0 auto;
     fill: saddlebrown;
     animation: rotation 5s linear infinite;
 }
@@ -78,14 +72,10 @@ button:hover {
 }
 
 @media screen and (max-width: 750px) {
-    button {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }   
-    .bean {
-        width: 13%;
-    } 
     #step {
-        margin-bottom: 1rem;
+        margin: 0 1rem;
     }
+    .bean {
+        width: calc(65px + 1vw);;
+    } 
 }

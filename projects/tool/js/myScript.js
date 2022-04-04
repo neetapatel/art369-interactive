@@ -60,6 +60,7 @@ function checkTime(m, s) {
   }  
 }
 
-// animate svg coffee beans filling screen
-// animate bank of images at end
-// email james hoffman, inquiring about steps
+// animate svg coffee beans filling screen like an hourglass
+// animate in bank of images at end?
+// email james hoffman!
+// switch to hario method?
