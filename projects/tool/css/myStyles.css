@@ -65,7 +65,7 @@ button:hover {
     animation: rotation 5s linear infinite;
 }
 
-/* coffe bean animation  */
+/* coffee bean animation  */
 @keyframes rotation {
     to {
         transform: rotate(360deg);
@@ -80,7 +80,7 @@ button:hover {
         margin: 0 1rem;
     }
     .bean {
-        width: calc(65px + 1vw);;
+        width: calc(45px + 1vw);;
     } 
 }
 
