@@ -1,4 +1,4 @@
-var sound = new Audio('audio/meditation-bell-sound.mp3');
+var sound = new Audio('audio/meditation-bell-sound-13s.mp3');
 
 var totalSecs = 0;
 
@@ -6,7 +6,7 @@ function setTime() { // onclick
   sound.play();
   var intervalID = setInterval(increment, 1000);
   // clear prep step
-  document.getElementById("step").innerHTML = "in a soft spiraling motion, pour <span class=\"highlight\">60 grams</span> of water over the ground coffee.";
+  document.getElementById("step").innerHTML = "In a soft spiraling motion, pour <span class=\"highlight\">60 grams</span> of water over the ground coffee.";
   document.getElementById("start-btn").innerHTML = "00:00";
   document.getElementById("start-btn").disabled = true;
 }
@@ -28,43 +28,43 @@ function increment() {
 function checkTime(m, s) {
 
   if (m == 0 && s == 15) {
-    document.getElementById("step").innerHTML = "give the slurry a gentle swirl.";
+    document.getElementById("step").innerHTML = "Give the slurry a gentle swirl.";
     sound.play();
   }
 
   if (m == 0 && s == 30) {
-    document.getElementById("step").innerHTML = "be still and let the coffee bloom.";
+    document.getElementById("step").innerHTML = "Be still and let the coffee bloom.";
     sound.play();
   }
 
   if (m == 0 && s == 45) {
-    document.getElementById("step").innerHTML = "slowly pour water in a spiraling motion, up to the <span class=\"highlight\">300 grams</span> mark.";
+    document.getElementById("step").innerHTML = "Slowly pour water in a spiraling motion, up to the <span class=\"highlight\">300 grams</span> mark.";
     sound.play();
   }
 
   if (m == 1 && s == 15) {
-    document.getElementById("step").innerHTML = "and again, to the <span class=\"highlight\">500 grams</span> mark.";
+    document.getElementById("step").innerHTML = "And again, to the <span class=\"highlight\">500 grams</span> mark.";
     sound.play();
   }
 
   if (m == 1 && s == 45) {
-    document.getElementById("step").innerHTML = "with a spoon, stir the grounds once clockwise and once counterclockwise.";
+    document.getElementById("step").innerHTML = "With a spoon, stir the grounds once clockwise and once counterclockwise.";
     sound.play();
   }
 
   if (m == 2 && s == 00) {
-    document.getElementById("step").innerHTML = "give the dripper a gentle swirl.";
+    document.getElementById("step").innerHTML = "Give the dripper a gentle swirl.";
     sound.play();
   }
 
   if (m == 2 && s == 15) {
-    document.getElementById("step").innerHTML = "allow the brew to draw down.";
+    document.getElementById("step").innerHTML = "Allow the brew to draw down.";
     // opportunity for some fun information here, while waiting
     sound.play();
   }
 
   if (m == 3 && s == 00) {
-    document.getElementById("step").innerHTML = "good morning :)";
+    document.getElementById("step").innerHTML = "Good morning :)";
     sound.play();
     // how to stop the increment / setInterval at this point (ask rosa)
   }  
