@@ -1,0 +1,37 @@
+html {
+	background-color: black;
+	color: white;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+#entries {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.entry {
+  width: 400px;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.title {
+	font-size: 0.75em;
+	color: lightslategrey;
+}
