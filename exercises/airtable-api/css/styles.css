@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+#slide {
+    padding: 8vw;
+}
+
+#slide-text {
+    color: white;
+    font-size: 5vw;
+}
+
+#slide-text:hover {
+    cursor: pointer;
+}
