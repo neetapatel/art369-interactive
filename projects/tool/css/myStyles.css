@@ -27,7 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    transition: background-color 15s ease, color 15s ease, border-color 15s ease;
+    transition: background-color 15s ease, color 5s ease 5s, border-color 15s ease;
 }   
 
 button {
@@ -60,7 +60,7 @@ button:hover {
 }
 
 #bean-1 {
-    transition: fill 15s ease;
+    transition: fill 5s ease 5s;
 }
 
 .bean {
