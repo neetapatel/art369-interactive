@@ -11,6 +11,8 @@ function setTime() { // onclick
   document.getElementById("start-btn").style.border = "none";
   document.getElementById("start-btn").style.padding = "0";
   document.getElementById("start-btn").disabled = true;
+  document.getElementById("start-btn").style.cursor = "auto";
+  document.getElementById("start-btn").style.color = "chocolate";
   goDark();
 }
 
@@ -57,25 +59,26 @@ function checkTime(m, s) {
   if (m == 1 && s == 45) {
     document.getElementById("step").innerHTML = "With a spoon, stir the grounds once clockwise and once counterclockwise.";
     sound.play();
+    goLight();
   }
 
   if (m == 2 && s == 00) {
     document.getElementById("step").innerHTML = "Give the dripper a gentle swirl.";
     sound.play();
-    goLight();
+    goDark();
   }
 
   if (m == 2 && s == 15) {
     document.getElementById("step").innerHTML = "Allow the brew to draw down.";
     // opportunity for some fun information here, while waiting
     sound.play();
-    goDark();
+    goLight();
   }
 
   if (m == 3 && s == 00) {
     document.getElementById("step").innerHTML = "Good morning :)";
     sound.play();
-    goLight();
+    goDark();
     // how to stop the increment / setInterval at this point (ask rosa)
   }  
 }
