@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bean {
+    width: 50px;
+    position: absolute;
+    top: -10vh;
+    left: 20px;
+    animation: falling 15s ease, rotation 15s linear infinite;
+}
+
+@keyframes falling {
+    to {
+        top: 110vh;
+        transform: rotate(360deg);
+    }
+}
